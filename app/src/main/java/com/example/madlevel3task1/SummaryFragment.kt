@@ -11,6 +11,10 @@ import android.view.ViewGroup
  * Use the [SummaryFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
+
+const val ARG_GAME_NAME = "arg_game_name"
+const val ARG_GAME_RATING = "arg_game_rating"
+
 class SummaryFragment : Fragment() {
 
     override fun onCreateView(

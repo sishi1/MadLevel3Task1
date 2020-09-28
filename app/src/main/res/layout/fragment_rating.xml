@@ -7,7 +7,7 @@
     tools:context=".RatingFragment">
 
     <Button
-        android:id="@+id/button_second"
+        android:id="@+id/btn_summary"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -18,7 +18,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/appCompatRatingBar" />
+        app:layout_constraintTop_toBottomOf="@+id/rb_rating" />
 
     <TextView
         android:id="@+id/tv_rate"
@@ -37,10 +37,10 @@
         app:layout_constraintVertical_chainStyle="packed" />
 
     <androidx.appcompat.widget.AppCompatRatingBar
-        android:id="@+id/appCompatRatingBar"
+        android:id="@+id/rb_rating"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/button_second"
+        app:layout_constraintBottom_toTopOf="@+id/btn_summary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -52,7 +52,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:text="@string/random_game_label"
-        app:layout_constraintBottom_toTopOf="@+id/appCompatRatingBar"
+        app:layout_constraintBottom_toTopOf="@+id/rb_rating"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
