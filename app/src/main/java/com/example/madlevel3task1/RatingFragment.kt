@@ -41,7 +41,7 @@ class RatingFragment : Fragment() {
 
     private fun navigateToSummary() {
         val args = Bundle()
-        args.putFloat(ARG_GAME_NAME, rb_rating.rating)
+        args.putFloat(ARG_GAME_RATING, rb_rating.rating)
         args.putString(ARG_GAME_NAME, tv_random_game.text.toString())
 
         findNavController().navigate(R.id.action_ratingFragment_to_summaryFragment, args)
