@@ -15,8 +15,8 @@ import kotlinx.android.synthetic.main.fragment_rating.view.*
 class RatingFragment : Fragment() {
 
     override fun onCreateView(
-            inflater: LayoutInflater, container: ViewGroup?,
-            savedInstanceState: Bundle?
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_rating, container, false)
@@ -33,7 +33,8 @@ class RatingFragment : Fragment() {
     }
 
     private fun showRandomAssessableGame() {
-        val randomGame = listOf("Red Dead Redemption 2",  "Rocket League", "Shadow of the Tombraider").random()
+        val randomGame =
+            listOf("Red Dead Redemption 2", "Rocket League", "Shadow of the Tombraider").random()
 
         tv_random_game.text = randomGame
     }
